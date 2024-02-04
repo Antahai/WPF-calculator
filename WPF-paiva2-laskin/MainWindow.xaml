@@ -8,46 +8,43 @@
         Title="MainWindow" Height="480" Width="642" Background="#FF353535">
     <Grid Margin="0,0,10,16">
 
-        <TextBox x:Name="TxtResult" HorizontalAlignment="Left" Height="34" Margin="14,83,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="300" Background="#FFB6B6B6" FontSize="20" FontWeight="Bold" BorderThickness="0,0,0,0"/>
-        <TextBox x:Name="TxtInput" HorizontalAlignment="Left" Height="415" Margin="319,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" FontSize="16"/>
+        <TextBox x:Name="TxtResult" HorizontalAlignment="Left" Height="41" Margin="14,80,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="295" Background="#FFB6B6B6" FontSize="30" BorderThickness="0,0,0,0" FontFamily="Exo 2 Black"/>
+        <TextBox x:Name="TxtInput" HorizontalAlignment="Left" Height="411" Margin="319,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" FontSize="16" Background="#FFB6B6B6"/>
 
-        <Button x:Name="BtnAc" Content="AC" HorizontalAlignment="Left" Height="56" Margin="14,369,0,0" VerticalAlignment="Top" Width="56" Click="BtnAc_Click" FontSize="20" Background="#FFE43030" Foreground="White" FontWeight="Bold" />
+        <Button x:Name="BtnAc" Content="AC" HorizontalAlignment="Left" Height="54" Margin="14,367,0,0" VerticalAlignment="Top" Width="54" Click="BtnAc_Click" FontSize="20" Background="#FFE43030" Foreground="White" FontWeight="Bold" />
 
-        <Button x:Name="BtnNegPos" Content="+/-" HorizontalAlignment="Left" Height="56" Margin="14,187,0,0" VerticalAlignment="Top" Width="56" Click="BtnNegPos_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
+        <Button x:Name="BtnNegPos" Content="+/-" HorizontalAlignment="Left" Height="54" Margin="14,186,0,0" VerticalAlignment="Top" Width="54" Click="BtnNegPos_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
 
-        <Button x:Name="BtnPros" Content="%" HorizontalAlignment="Left" Height="56" Margin="14,248,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Background="#FF0E0E0E" Foreground="White" FontWeight="Bold"/>
-        <Button x:Name="BtnDivide" Content="/" HorizontalAlignment="Left" Height="56" Margin="257,125,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF3A5CD3" FontWeight="Bold"/>
-        <Button x:Name="BtnMultiply" Content="X" HorizontalAlignment="Left" Height="56" Margin="257,187,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Background="#FF8C288D" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="BtnPros" Content="%" HorizontalAlignment="Left" Height="55" Margin="14,246,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Background="#FF0E0E0E" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="BtnDivide" Content="/" HorizontalAlignment="Left" Height="54" Margin="255,126,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF3A5CD3" FontWeight="Bold"/>
+        <Button x:Name="BtnMultiply" Content="X" HorizontalAlignment="Left" Height="54" Margin="255,186,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Background="#FF8C288D" Foreground="White" FontWeight="Bold"/>
 
+        <Button x:Name="BtnPlus" Content="+" HorizontalAlignment="Left" Height="55" Margin="255,246,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Background="#FF1E9F26" Foreground="White" FontWeight="Bold"/>
 
-        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="74,247,0,0" VerticalAlignment="Top" Width="56" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="Btn0" Content="0" HorizontalAlignment="Left" Height="54" Margin="134,367,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn1" Content="1" HorizontalAlignment="Left" Height="54" Margin="74,307,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn2" Content="2" HorizontalAlignment="Left" Height="54" Margin="134,307,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn3" Content="3" HorizontalAlignment="Left" Height="54" Margin="195,307,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn4" Content="4" HorizontalAlignment="Left" Height="55" Margin="74,246,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn5" Content="5" HorizontalAlignment="Left" Height="55" Margin="134,246,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn6" Content="6" HorizontalAlignment="Left" Height="55" Margin="195,246,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn7" Content="7" HorizontalAlignment="Left" Height="54" Margin="74,186,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn8" Content="8" HorizontalAlignment="Left" Height="54" Margin="134,186,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="Btn9" Content="9" HorizontalAlignment="Left" Height="54" Margin="195,186,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Height="54" Margin="255,307,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FFC83232" FontWeight="Bold"/>
 
-        <Button x:Name="BtnPlus" Content="+" HorizontalAlignment="Left" Height="56" Margin="257,247,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Background="#FF1E9F26" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="BtnComma" Content="," HorizontalAlignment="Left" Height="54" Margin="195,367,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
 
-        <Button x:Name="Btn0" Content="0" HorizontalAlignment="Left" Height="56" Margin="136,369,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn1" Content="1" HorizontalAlignment="Left" Height="56" Margin="74,307,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn2" Content="2" HorizontalAlignment="Left" Height="56" Margin="136,307,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn3" Content="3" HorizontalAlignment="Left" Height="56" Margin="196,307,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn4" Content="4" HorizontalAlignment="Left" Height="56" Margin="74,247,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn5" Content="5" HorizontalAlignment="Left" Height="56" Margin="136,247,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn6" Content="6" HorizontalAlignment="Left" Height="56" Margin="196,247,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn7" Content="7" HorizontalAlignment="Left" Height="56" Margin="74,187,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn8" Content="8" HorizontalAlignment="Left" Height="56" Margin="136,187,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="Btn9" Content="9" HorizontalAlignment="Left" Height="56" Margin="196,187,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Height="56" Margin="257,307,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FFC83232" FontWeight="Bold"/>
-
-        <Button x:Name="BtnComma" Content="," HorizontalAlignment="Left" Height="56" Margin="196,369,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-
-        <Button x:Name="BtnEquals" Content="=" HorizontalAlignment="Left" Height="56" Margin="257,369,0,0" VerticalAlignment="Top" Width="56" Click="BtnEquals_Click" FontSize="20" Background="#FF0A0A09" Foreground="White" FontWeight="Bold"/>
-        <Button x:Name="BtnArcOpen" Content="(" HorizontalAlignment="Left" Height="56" Margin="74,125,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
-        <Button x:Name="BtnArcClose" Content=")" HorizontalAlignment="Left" Height="56" Margin="196,126,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
-        <Button x:Name="BtnDelLast" Content="&lt;" HorizontalAlignment="Left" Height="56" Margin="14,126,0,0" VerticalAlignment="Top" Width="56" Click="BtnDelLast_Click" FontSize="20" Background="#FFE43030" Foreground="White" FontWeight="Bold" />
-        <Label x:Name="LblInput" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" Height="65" Width="299" Foreground="White" FontSize="14" Background="#FF655F5F"/>
-        <Button x:Name="BtnClear" Content="Clear" HorizontalAlignment="Left" Margin="543,386,0,0" VerticalAlignment="Top" Height="39" Width="75" Background="#FFE43030" Foreground="White" FontSize="20" Click="BtnClear_Click"/>
-        <Button x:Name="BtnArcRnd" Content="RND" HorizontalAlignment="Left" Height="56" Margin="14,308,0,0" VerticalAlignment="Top" Width="56" FontSize="20" Foreground="White" Background="Black" Click="BtnArcRnd_Click" FontWeight="Bold" />
-        <Label x:Name="LblError" HorizontalAlignment="Left" Height="28" Margin="14,57,0,0" VerticalAlignment="Top" Width="299" Foreground="Red"/>
-        <Button x:Name="Btn000" Content="000" HorizontalAlignment="Left" Height="56" Margin="74,369,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
-        <Button x:Name="BtnArcStartAndEnd" Content="(...)" HorizontalAlignment="Left" Height="56" Margin="136,125,0,0" VerticalAlignment="Top" Width="56" Click="Button_ArcStartAndEnd" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
+        <Button x:Name="BtnEquals" Content="=" HorizontalAlignment="Left" Height="54" Margin="255,367,0,0" VerticalAlignment="Top" Width="54" Click="BtnEquals_Click" FontSize="20" Background="#FF0A0A09" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="BtnArcOpen" Content="(" HorizontalAlignment="Left" Height="54" Margin="74,126,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
+        <Button x:Name="BtnArcClose" Content=")" HorizontalAlignment="Left" Height="54" Margin="195,126,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
+        <Button x:Name="BtnDelLast" Content="&lt;" HorizontalAlignment="Left" Height="54" Margin="14,126,0,0" VerticalAlignment="Top" Width="54" Click="BtnDelLast_Click" FontSize="20" Background="#FFE43030" Foreground="White" FontWeight="Bold" />
+        <Label x:Name="LblInput" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" Height="65" Width="295" Foreground="White" FontSize="14" Background="#FF655F5F"/>
+        <Button x:Name="BtnClear" Content="Clear" HorizontalAlignment="Left" Margin="540,381,0,0" VerticalAlignment="Top" Height="37" Width="75" Background="#FFE43030" Foreground="White" FontSize="20" Click="BtnClear_Click"/>
+        <Button x:Name="BtnArcRnd" Content="RND" HorizontalAlignment="Left" Height="54" Margin="14,307,0,0" VerticalAlignment="Top" Width="54" FontSize="20" Foreground="White" Background="Black" Click="BtnArcRnd_Click" FontWeight="Bold" />
+        <Label x:Name="LblError" HorizontalAlignment="Left" Height="28" Margin="14,47,0,0" VerticalAlignment="Top" Width="295" Foreground="Red"/>
+        <Button x:Name="Btn000" Content="000" HorizontalAlignment="Left" Height="54" Margin="74,367,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" FontSize="20" Foreground="White" Background="#FF565656" FontWeight="Bold"/>
+        <Button x:Name="BtnArcStartAndEnd" Content="(...)" HorizontalAlignment="Left" Height="54" Margin="134,126,0,0" VerticalAlignment="Top" Width="55" Click="Button_ArcStartAndEnd" FontSize="20" Foreground="White" Background="Black" FontWeight="Bold" />
 
     </Grid>
 </Window>
