@@ -17,116 +17,19 @@ namespace WPF_paiva2_laskin
 
         // Button clicks (numbers and operators)
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        {   
+            
+            TxtInput.IsReadOnly = true; // inputarea is not allowed to be edited
 
-            TxtInput.IsReadOnly = true;
-            //numers
-            if (sender == Btn0)
-            {
-                LblInput.Content = LblInput.Content + "0";
-                TxtInput.Text = TxtInput.Text + "0";
-            }
-            else if (sender == Btn000)
-            {
-                LblInput.Content = LblInput.Content + "000";
-                TxtInput.Text = TxtInput.Text + "000";
-            }
-            else if (sender == Btn1)
-            {
-                LblInput.Content = LblInput.Content + "1";
-                TxtInput.Text = TxtInput.Text + "1";
-            }
-            else if (sender == Btn2)
-            {
-                LblInput.Content = LblInput.Content + "2";
-                TxtInput.Text = TxtInput.Text + "2";
-            }
-            else if (sender == Btn3)
-            {
-                LblInput.Content = LblInput.Content + "3";
-                TxtInput.Text = TxtInput.Text + "3";
-            }
-            else if (sender == Btn4)
-            {
-                LblInput.Content = LblInput.Content + "4";
-                TxtInput.Text = TxtInput.Text + "4";
-            }
-            else if (sender == Btn5)
-            {
-                LblInput.Content = LblInput.Content + "5";
-                TxtInput.Text = TxtInput.Text + "5";
-            }
-            else if (sender == Btn6)
-            {
-                LblInput.Content = LblInput.Content + "6";
-                TxtInput.Text = TxtInput.Text + "6";
-            }
-            else if (sender == Btn7)
-            {
-                LblInput.Content = LblInput.Content + "7";
-                TxtInput.Text = TxtInput.Text + "7";
-            }
-            else if (sender == Btn8)
-            {
-                LblInput.Content = LblInput.Content + "8";
-                TxtInput.Text = TxtInput.Text + "8";
-            }
-            else if (sender == Btn9)
-            {
-                LblInput.Content = LblInput.Content + "9";
-                TxtInput.Text = TxtInput.Text + "9";
-            }
-            // acrs
-            else if (sender == BtnArcOpen)
-            {
-                LblInput.Content = LblInput.Content + "(";
-                TxtInput.Text = TxtInput.Text + "(";
-            }
-            else if (sender == BtnArcClose)
-            {
-                LblInput.Content = LblInput.Content + ")";
-                TxtInput.Text = TxtInput.Text + ")";
-            }
-            // comma
-            else if (sender == BtnComma)
-            {
-                LblInput.Content = LblInput.Content + ".";
-                TxtInput.Text = TxtInput.Text + ".";
-            }
+            string btnPressed = sender.ToString().Substring(sender.ToString().Length - 1);      // find out which button was pressed
+            if (sender == BtnMultiply) btnPressed = "*";                                        // if button is "X", replace it with "*" for DataTable
 
-            // ------- operators -----------------------
+            // if operator use calculate function
+            if (sender == BtnMinus || sender == BtnPlus || sender == BtnPros || sender == BtnDivide || sender == BtnMultiply) Calculate(false);
 
-            else if (sender == BtnMinus)
-            {
-                Calculate(false);
-                LblInput.Content = LblInput.Content + "-";
-                TxtInput.Text = TxtInput.Text + "-";
-            }
-            else if (sender == BtnMultiply)
-            {
-                Calculate(false);
-                LblInput.Content = LblInput.Content + "*";
-                TxtInput.Text = TxtInput.Text + "*";
-            }
-            else if (sender == BtnPros)
-            {
-                Calculate(false);
-                LblInput.Content = LblInput.Content + "%";
-                TxtInput.Text = TxtInput.Text + "%";
-            }
-            else if (sender == BtnPlus)
-            {
-                Calculate(false);
-                LblInput.Content = LblInput.Content + "+";
-                TxtInput.Text = TxtInput.Text + "+";
-            }
-            else
-            {
-                Calculate(false);
-                LblInput.Content = LblInput.Content + "/";
-                TxtInput.Text = TxtInput.Text + "/";
-            }
-
+            // update input fields
+            LblInput.Content = LblInput.Content + btnPressed;
+            TxtInput.Text = TxtInput.Text + btnPressed;
         }
 
         // Arcs in start and end
