@@ -23,6 +23,7 @@ namespace WPF_paiva2_laskin
 
             string btnPressed = sender.ToString().Substring(sender.ToString().Length - 1);      // find out which button was pressed
             if (sender == BtnMultiply) btnPressed = "*";                                        // if button is "X", replace it with "*" for DataTable
+            if (sender == Btn000) btnPressed = "000";                                           // if button is "X", replace it with "*" for DataTable
 
             // if operator use calculate function
             if (sender == BtnMinus || sender == BtnPlus || sender == BtnPros || sender == BtnDivide || sender == BtnMultiply) Calculate(false);
@@ -52,11 +53,10 @@ namespace WPF_paiva2_laskin
             foreach (var ch in strRnd)
             {
                 if (ch == chars[0]) newRnd = newRnd + ".";
-
                 else newRnd = newRnd + ch.ToString();
             }
 
-            // update label and txtBoc
+            // update label and txtBox
             LblInput.Content = LblInput.Content + newRnd;
             TxtInput.Text = TxtInput.Text + newRnd;
         }
@@ -74,6 +74,7 @@ namespace WPF_paiva2_laskin
             // LblInput.Content = "";
             TxtInput.Text = TxtInput.Text + "\n| ";
         }
+       
         // AC button
         private void BtnAc_Click(object sender, RoutedEventArgs e)
         {
@@ -83,6 +84,8 @@ namespace WPF_paiva2_laskin
         }
 
         // Calculate 
+        // Using DataTable, simple solution. It would be nice to have own Calculator -class to compute this in future version
+        // with more features like calculating the square root, power calculation, sin, cos, tan...
         private void Calculate(bool acButton)
         {
             bool formulaOK = true;
@@ -151,10 +154,8 @@ namespace WPF_paiva2_laskin
             // loop to calculate amount of arcs
             foreach (var ch in source)
             {
-                if (ch == chars[0] || ch == chars[1])
-                {
-                    count++;
-                }
+                if (ch == chars[0] || ch == chars[1]) count++;
+   
             }
             // if remainder is 0, numbe is even, then return true
             if (count % 2 == 0) isItEven = true;   
